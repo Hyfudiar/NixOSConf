@@ -7,7 +7,9 @@
 {
   imports =
     [ # Include the results of the hardware scan.
+      <nixos-hardware/lenovo/thinkpad/p43s>
       ./hardware-configuration.nix
+      ./nvidia.nix
     ];
 
   # Bootloader.
@@ -15,7 +17,9 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages-rt_latest;
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -121,7 +125,8 @@
     astroterm
     htop
     git
-    lshw 
+    lshw
+    unzip 
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
