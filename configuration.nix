@@ -7,7 +7,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      <nixos-hardware/lenovo/thinkpad/p43s>
+      #<nixos-hardware/lenovo/thinkpad/p43s>
       ./hardware-configuration.nix
       ./nvidia.nix
     ];
