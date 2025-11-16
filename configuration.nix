@@ -126,7 +126,8 @@
     htop
     git
     lshw
-    unzip 
+    unzip
+    reaper 
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
