@@ -97,7 +97,6 @@
     extraGroups = [ "networkmanager" "wheel" "audio"];
     packages = with pkgs; [
       kdePackages.kate
-    #  thunderbird
     ];
   };
 
@@ -112,6 +111,9 @@
     localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
   };
 
+  # -hyfu- MUSNIX SECTION
+  musnix.enable = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -119,7 +121,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
+    wget
     librewolf
     fastfetch
     astroterm
@@ -127,7 +129,7 @@
     git
     lshw
     unzip
-    reaper 
+    reaper
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
