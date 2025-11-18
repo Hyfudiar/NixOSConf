@@ -1,22 +1,22 @@
 {
   inputs = {
-    nixpkgs = { url = "github:NixOS/nixpkgs/nixos-unstable"; };
+    nixpkgs = { url = "github:NixOS/nixpkgs/nixos-25.05"; };
     musnix  = { url = "github:musnix/musnix"; };
-    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    nixos-hardware = { url =  "github:NixOS/nixos-hardware/master"; };
   };
   outputs = inputs: rec {
     nixosConfigurations.bepithonk = inputs.nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules =
-          [ # ...
+          [ 
             inputs.musnix.nixosModules.musnix
             ./configuration.nix
             inputs.nixos-hardware.nixosModules.lenovo-thinkpad-p43s
           ];
         specialArgs = { inherit inputs; };
-     };
-   };
- }
+    };
+  };
+}
 #...
 #{
 #  inputs = {
