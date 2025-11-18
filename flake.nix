@@ -4,7 +4,15 @@
     musnix  = { url = "github:musnix/musnix"; };
     nixos-hardware = { url =  "github:NixOS/nixos-hardware/master"; };
   };
-  outputs = inputs: rec {
+  outputs = inputs: 
+    let
+      system = "x86_64-linux";
+      pkgs = import nixpkgs {
+        inherit system;
+        overlays = [ musnix.overlay ];
+      };
+    in
+    rec {
     nixosConfigurations.bepithonk = inputs.nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules =
