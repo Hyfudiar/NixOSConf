@@ -14,9 +14,9 @@
             inputs.nixos-hardware.nixosModules.lenovo-thinkpad-p43s
           ];
         specialArgs = { inherit inputs; };
-      };
-    };
-  };
+     };
+   };
+ }
 #...
 #{
 #  inputs = {
