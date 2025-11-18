@@ -4,7 +4,7 @@
     musnix  = { url = "github:musnix/musnix"; };
     nixos-hardware = { url =  "github:NixOS/nixos-hardware/master"; };
   };
-  outputs = inputs: 
+  outputs = { self, nixpkgs, musnix, nixos-hardware, ... } @ inputs: 
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
