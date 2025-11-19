@@ -8,6 +8,9 @@
   security.sudo.extraConfig = ''
     moritz  ALL=(ALL) NOPASSWD: ${pkgs.systemd}/bin/systemctl
     '';
+  
+  boot.kernelModules = [ "snd-seq" "snd-rawmidi" ];
+  hardware.pulseaudio.package = pkgs.pulseaudio.override { jackaudioSupport = true; };
 
   musnix = {
     enable = true;
