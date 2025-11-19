@@ -131,6 +131,8 @@
     lshw
     unzip
     reaper
+    reaper-sws-extension
+    reaper-reapack-extension
     toybox
     pciutils
     wineWowPackages.yabridge
