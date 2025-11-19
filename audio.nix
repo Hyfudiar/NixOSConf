@@ -4,7 +4,7 @@
 
 {
 
-  environment.systemPackages = with pkgs; [ pavucontrol libjack2 jack2 qjackctl jack2Full jack_capture ];
+  environment.systemPackages = with pkgs; [ pavucontrol libjack2 jack2 qjackctl jack_capture ];
   security.sudo.extraConfig = ''
     moritz  ALL=(ALL) NOPASSWD: ${pkgs.systemd}/bin/systemctl
     '';
