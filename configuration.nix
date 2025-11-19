@@ -140,12 +140,13 @@
     winetricks
     yabridge
     yabridgectl
-    gimp3
+    #gimp3
     gimp3-with-plugins
     gimp3Plugins.gmic
     gimp3Plugins.bimp
-    gimp
+    #gimp
     gimpPlugins.gmic
+    gimp-with-plugins
     #gimpPlugins.bimp
     libreoffice-qt6
   ];
