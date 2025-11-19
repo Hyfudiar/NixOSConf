@@ -143,7 +143,7 @@
     #gimp3
     gimp3-with-plugins
     gimp3Plugins.gmic
-    gimp3Plugins.bimp
+    #gimp3Plugins.bimp
     #gimp
     gimpPlugins.gmic
     gimp-with-plugins
