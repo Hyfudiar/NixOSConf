@@ -10,6 +10,7 @@
       #<nixos-hardware/lenovo/thinkpad/p43s>
       ./hardware-configuration.nix
       ./nvidia.nix
+      #./audio.nix
     ];
 
   # Bootloader.
@@ -130,6 +131,8 @@
     lshw
     unzip
     reaper
+    toybox
+    pciutils
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
