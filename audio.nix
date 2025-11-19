@@ -10,7 +10,8 @@
     '';
   
   boot.kernelModules = [ "snd-seq" "snd-rawmidi" ];
-  hardware.pulseaudio.package = pkgs.pulseaudio.override { jackaudioSupport = true; };
+  #changed "hardware.pulseaudio" to "services.pulseaudio" to avoid warning
+  services.pulseaudio.package = pkgs.pulseaudio.override { jackaudioSupport = true; };
 
   musnix = {
     enable = true;
