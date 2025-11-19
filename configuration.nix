@@ -143,10 +143,11 @@
     gimp3
     gimp3-with-plugins
     gimp3Plugins.gmic
-    gimp3Plugins.bimp
+    #gimp3Plugins.bimp
     gimp
     gimpPlugins.gmic
     #gimpPlugins.bimp
+    libreoffice-qt6
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
