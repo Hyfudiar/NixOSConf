@@ -10,7 +10,7 @@
       #<nixos-hardware/lenovo/thinkpad/p43s>
       ./hardware-configuration.nix
       ./nvidia.nix
-      #./audio.nix
+      ./audio.nix
     ];
 
   # Bootloader.
