@@ -146,7 +146,7 @@
     gimp3Plugins.bimp
     gimp
     gimpPlugins.gmic
-    gimpPlugins.bimp
+    #gimpPlugins.bimp
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
