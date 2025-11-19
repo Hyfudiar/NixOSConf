@@ -141,7 +141,12 @@
     yabridge
     yabridgectl
     gimp3
+    gimp3-with-plugins
     gimp3Plugins.gmic
+    gimp3Plugins.bimp
+    gimp
+    gimpPlugins.gmic
+    gimpPlugins.bimp
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
