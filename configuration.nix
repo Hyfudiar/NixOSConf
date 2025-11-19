@@ -140,6 +140,8 @@
     winetricks
     yabridge
     yabridgectl
+    gimp3
+    gimp3Plugins.gmic
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
