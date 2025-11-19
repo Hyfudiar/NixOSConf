@@ -136,6 +136,7 @@
     toybox
     pciutils
     wineWowPackages.yabridge
+    wineWowPackages.stagingFull
     winetricks
     yabridge
     yabridgectl
