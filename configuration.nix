@@ -150,6 +150,17 @@
     #gimpPlugins.bimp
     libreoffice-qt6
     vlc
+    caps
+    nova-filters
+    AMB-plugins
+    ladspaPlugins
+    carla
+    neovim
+    puredata
+    plugdata
+    vscode
+    godot
+        
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
