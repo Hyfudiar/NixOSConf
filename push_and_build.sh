@@ -8,5 +8,5 @@ if [$? -eq 0 ]; then
 	git push
 else
 	echo "Not pushed, offline"
-
+fi
 sudo nixos-rebuild switch --flake /etc/nixos#bepithonk
