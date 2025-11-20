@@ -2,6 +2,11 @@
 
 git add .
 git commit -m "$1"
-git push
+
+wget -q --spider http://google.com
+if [$? -eq 0 ]; then
+	git push
+else
+	echo "Not pushed, offline"
 
 sudo nixos-rebuild switch --flake /etc/nixos#bepithonk
