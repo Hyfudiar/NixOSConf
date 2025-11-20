@@ -149,6 +149,7 @@
     gimp-with-plugins
     #gimpPlugins.bimp
     libreoffice-qt6
+    vlc
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
