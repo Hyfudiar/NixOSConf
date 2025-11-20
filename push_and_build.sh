@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-cd /etc/nixos/
 sudo git add .
 sudo git commit -m "$1"
-
+sudo nixos-rebuild switch --flake /etc/nixos#bepithonk
