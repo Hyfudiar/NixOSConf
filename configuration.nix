@@ -162,7 +162,12 @@
     godot
     vital
     surge
-    surge-XT     
+    surge-XT 
+    cheese
+    imagemagick
+    gmic
+    cheesecutter
+        
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
