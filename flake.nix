@@ -18,7 +18,7 @@
         inherit system;
         config = {
           allowUnfree = true;
-        }
+        };
         overlays = [ 
           musnix.overlay
           overlay-unstable
