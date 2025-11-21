@@ -160,7 +160,9 @@
     plugdata
     vscode
     godot
-        
+    vital
+    surge
+    surge-XT     
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
