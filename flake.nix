@@ -9,7 +9,7 @@
     let
       system = "x86_64-linux";
       overlay-unstable = final: prev: {
-        unstable = import nixpkgs-unstable {
+        unstable = import inputs.nixpkgs-unstable {
           inherit system;
           config.allowUnfree = true;
         };
