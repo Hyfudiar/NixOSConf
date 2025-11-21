@@ -130,7 +130,8 @@
     git
     lshw
     unzip
-    reaper
+    #reaper
+    unstable.reaper
     reaper-sws-extension
     reaper-reapack-extension
     toybox

@@ -1,15 +1,28 @@
 {
   inputs = {
     nixpkgs = { url = "github:NixOS/nixpkgs/nixos-25.05"; };
+    nixpkgs-unstable = { url = "github:NixOS/nixpkgs/nixos-unstable"; };
     musnix  = { url = "github:musnix/musnix"; };
     nixos-hardware = { url =  "github:NixOS/nixos-hardware/master"; };
   };
   outputs = { self, nixpkgs, musnix, nixos-hardware, ... } @ inputs: 
     let
       system = "x86_64-linux";
+      overlay-unstable = final: prev: {
+        unstable = import nixpkgs-unstable {
+          inherit system;
+          config.allowUnfree = true;
+        };
+      };
       pkgs = import nixpkgs {
         inherit system;
-        overlays = [ musnix.overlay ];
+        config = {
+          allowUnfree = true;
+        }
+        overlays = [ 
+          musnix.overlay
+          overlay-unstable
+        ];
       };
     in
     rec {
