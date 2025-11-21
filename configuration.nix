@@ -121,6 +121,7 @@
   # -hyfu- REAPER Flake
   _module.args.pkgsUnstable = import inputs.nixpkgs-unstable {
     inherit (pkgs.stdenv.hostPlatform) system;
+    inherit (config.nixpkgs) config;
   };
 
   # List packages installed in system profile. To search, run:
