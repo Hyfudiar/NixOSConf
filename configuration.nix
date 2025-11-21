@@ -136,10 +136,12 @@
     git
     lshw
     unzip
-    #reaper
-    pkgsUnstable.reaper
-    pkgsUnstable.reaper-sws-extension
-    pkgsUnstable.reaper-reapack-extension
+    reaper
+    reaper-sws-extension
+    reaper-reapack-extension
+    #pkgsUnstable.reaper
+    #pkgsUnstable.reaper-sws-extension
+    #pkgsUnstable.reaper-reapack-extension
     toybox
     pciutils
     wineWowPackages.yabridge
