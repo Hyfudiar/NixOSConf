@@ -5,23 +5,23 @@
     musnix  = { url = "github:musnix/musnix"; };
     nixos-hardware = { url =  "github:NixOS/nixos-hardware/master"; };
   };
-  outputs = { self, nixpkgs, musnix, nixos-hardware, ... } @ inputs: 
+  outputs = { self, nixpkgs, nixpkgs-unstable, musnix, nixos-hardware, ... } @ inputs: 
     let
       system = "x86_64-linux";
-      overlay-unstable = final: prev: {
-        unstable = import inputs.nixpkgs-unstable {
-          inherit system;
-          config.allowUnfree = true;
-        };
-      };
+      #overlay-unstable = final: prev: {
+      #  unstable = import inputs.nixpkgs-unstable {
+      #    inherit system;
+      #    config.allowUnfree = true;
+      #  };
+      #};
       pkgs = import nixpkgs {
         inherit system;
-        config = {
-          allowUnfree = true;
-        };
+        #config = {
+        #  allowUnfree = true;
+        #};
         overlays = [ 
           musnix.overlay
-          overlay-unstable
+          #overlay-unstable
         ];
       };
     in

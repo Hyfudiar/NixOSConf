@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, lib, pkgs, ... }:
+{ config, inputs, lib, pkgs, pkgsUnstable, ... }:
 
 {
   imports =
@@ -117,6 +117,11 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  
+  # -hyfu- REAPER Flake
+  _module.args.pkgsUnstable = import inputs.nixpkgs-unstable {
+    inherit (pkgs.stdenv.hostPlatform) system;
+  };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -131,7 +136,7 @@
     lshw
     unzip
     #reaper
-    unstable.reaper
+    pkgsUnstable.reaper
     reaper-sws-extension
     reaper-reapack-extension
     toybox
