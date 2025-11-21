@@ -138,8 +138,8 @@
     unzip
     #reaper
     pkgsUnstable.reaper
-    reaper-sws-extension
-    reaper-reapack-extension
+    pkgsUnstable.reaper-sws-extension
+    pkgsUnstable.reaper-reapack-extension
     toybox
     pciutils
     wineWowPackages.yabridge
