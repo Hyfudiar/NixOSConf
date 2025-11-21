@@ -140,8 +140,8 @@
     #reaper-sws-extension
     #reaper-reapack-extension
     pkgsUnstable.reaper
-    pkgsUnstable.reaper-sws-extension
-    pkgsUnstable.reaper-reapack-extension
+    #pkgsUnstable.reaper-sws-extension
+    #pkgsUnstable.reaper-reapack-extension
     toybox
     pciutils
     wineWowPackages.yabridge
