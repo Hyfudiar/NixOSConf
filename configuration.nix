@@ -197,6 +197,7 @@
     discord
     dmidecode
     lazygit
+    cowsay
      
   ];
 
