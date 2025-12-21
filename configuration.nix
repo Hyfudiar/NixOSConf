@@ -180,7 +180,8 @@
     helm
     sunvox
     discord
-       
+    dmidecode
+    
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
