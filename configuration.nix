@@ -142,6 +142,7 @@
     pkgsUnstable.reaper
     pkgsUnstable.reaper-sws-extension
     pkgsUnstable.reaper-reapack-extension
+    pkgsUnstable.bitwig-studio
     toybox
     pciutils
     wineWowPackages.yabridge
