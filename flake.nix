@@ -4,11 +4,10 @@
     nixpkgs-unstable = { url = "github:NixOS/nixpkgs/nixos-unstable"; };
     musnix  = { url = "github:musnix/musnix"; };
     nixos-hardware = { url =  "github:NixOS/nixos-hardware/master"; };
-    home-manager.url = "github:nix-community/home-manager";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    
   };
 
-  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, musnix, nixos-hardware, ... }: 
+  outputs = { self, nixpkgs, nixpkgs-unstable, musnix, nixos-hardware, ... } @ inputs: 
     let
       system = "x86_64-linux";
       #overlay-unstable = final: prev: {
@@ -36,15 +35,7 @@
             inputs.musnix.nixosModules.musnix
             ./configuration.nix
             inputs.nixos-hardware.nixosModules.lenovo-thinkpad-p43s
-            home-manager.nixosModules.home-manager
-            {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.users.hyfudiar = ./home.nix;
-
-              # Optionally, use home-manager.extraSpecialArgs to pass
-              # arguments to home.nix
-            }
+            
           ];
         specialArgs = { inherit inputs; };
     };
