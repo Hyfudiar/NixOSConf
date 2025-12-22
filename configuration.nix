@@ -186,6 +186,7 @@
     dmidecode
     lazygit
     cowsay
+    home-manager
      
   ];
 
