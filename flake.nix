@@ -4,10 +4,11 @@
     nixpkgs-unstable = { url = "github:NixOS/nixpkgs/nixos-unstable"; };
     musnix  = { url = "github:musnix/musnix"; };
     nixos-hardware = { url =  "github:NixOS/nixos-hardware/master"; };
-    home-manager = { url = "github:nix-community/home-manager"; };
+    home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
-  outputs = { self, nixpkgs, nixpkgs-unstable, musnix, nixos-hardware, home-manager, ... } @ inputs: 
+
+  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, home-manager, musnix, nixos-hardware, ... }: 
     let
       system = "x86_64-linux";
       #overlay-unstable = final: prev: {
