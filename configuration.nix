@@ -139,26 +139,7 @@
     inherit (config.nixpkgs) config;
   };
   
-  # -hyfu- adding home manager
-  let
-    home-manager = builtins.fetchTarball https://github.com/nix-community/home-manager/archive/release-25.11.tar.gz;
-  in
-  {
-    imports =
-      [
-        (import "${home-manager}/nixos")
-      ];
-
-    users.users.hyfudiar.isNormalUser = true;
-    home-manager.users.hyfudiar = { pkgs, ... }: {
-      home.packages = [ pkgs.fortune ];
-      programs.bash.enable = true;
-
-      # The state version is required and should stay at the version you
-      # originally installed.
-      home.stateVersion = "25.11";
-    };
-  }  
+  # -hyfu- adding home manager  
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
