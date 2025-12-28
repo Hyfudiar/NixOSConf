@@ -187,6 +187,9 @@
     lazygit
     cowsay
     home-manager
+    audacity
+    tap-plugins
+    
      
   ];
 
