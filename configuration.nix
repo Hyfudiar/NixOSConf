@@ -189,7 +189,7 @@
     home-manager
     audacity
     tap-plugins
-    alsamixer
+    alsa-utils
      
   ];
 
