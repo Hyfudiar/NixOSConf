@@ -190,7 +190,9 @@
     audacity
     tap-plugins
     alsa-utils
-     
+    uhhyou-plugins
+    paulstretch
+      
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
