@@ -192,7 +192,10 @@
     alsa-utils
     uhhyou-plugins
     paulstretch
-      
+    diopser
+    magnetophonDSP.pluginUtils
+    stone-phaser
+    
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
