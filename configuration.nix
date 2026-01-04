@@ -302,7 +302,7 @@
         mesa
         libxkbcommon
       ];
-      NIX_LD = lib.mkForce true lib.fileContents "${pkgs.stdenv.cc}/nix-support/dynamic-linker";
+      NIX_LD = lib.mkForce lib.fileContents "${pkgs.stdenv.cc}/nix-support/dynamic-linker";
   };  
 
   # Some programs need SUID wrappers, can be configured further or are
