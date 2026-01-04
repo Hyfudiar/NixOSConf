@@ -288,7 +288,7 @@
         librsvg
         xorg.libXft
         libvdpau
-        gnome2.pango
+        pango
         cairo
         atk
         gdk-pixbuf
