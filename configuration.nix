@@ -196,6 +196,7 @@
     magnetophonDSP.pluginUtils
     stone-phaser
     autoPatchelfHook
+    steam-run
  
   ];
 
