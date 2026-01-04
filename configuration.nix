@@ -204,19 +204,11 @@
   
   programs.nix-ld = {
     enable = true;
-    libraries = with pkgs; [
-      libx11
-      libxcursor
-      libxext
-      libxfixes
-      libxi
-      libxinerama
-      libxkbcommon
-      libxrandr
-      libxrender
-      wayland
-
-    ];
+    libraries = options.programs.nix-ld.libraries.default ++ (with pkgs; [ 
+    
+    # add other libraries 
+    
+    ]);
   };
 
   # Some programs need SUID wrappers, can be configured further or are
