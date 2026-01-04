@@ -199,6 +199,17 @@
  
   ];
 
+  # -hyfu- for running Godot binaries
+  
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      libX11
+      wayland
+
+    ];
+  };
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
