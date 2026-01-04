@@ -195,7 +195,8 @@
     diopser
     magnetophonDSP.pluginUtils
     stone-phaser
-    
+    autoPatchelfHook
+ 
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
