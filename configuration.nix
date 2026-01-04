@@ -205,6 +205,14 @@
     enable = true;
     libraries = with pkgs; [
       libx11
+      libxcursor
+      libxext
+      libxfixes
+      libxi
+      libxinerama
+      libxkbcommon
+      libxrandr
+      libxrender
       wayland
 
     ];
