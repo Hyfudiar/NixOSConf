@@ -208,7 +208,7 @@
  # -hyfu- installing SoundThread
   nixpkgs.config.packageOverrides = pkgs: {
 
-    soundthread = pkgs.callPackage /etc/nixos/NixPackages/SoundThread/default.nix { };
+    soundthread = pkgs.callPackage ./NixPackages/SoundThread/default.nix { };
 
   };
 
