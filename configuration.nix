@@ -198,8 +198,8 @@
     stone-phaser
     autoPatchelfHook
     #steam-run
-    copyDesktopItems
-    makeDesktopItem
+    #copyDesktopItems
+    #makeDesktopItem
 
   ];
 
