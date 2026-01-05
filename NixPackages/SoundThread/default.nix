@@ -1,7 +1,6 @@
 { stdenv, lib, fetchurl, autoPatchelfHook, libgcc, copyDesktopItems, makeDesktopItem }:
 
-# AFTER INSTALLING YOU MUST RUN:
-# export LD_LIBRARY_PATH=$NIX_LD_LIBRARY_PATH
+
 
 stdenv.mkDerivation rec {
     pname = "soundthread";
