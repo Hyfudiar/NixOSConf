@@ -201,14 +201,14 @@
     #copyDesktopItems
     #makeDesktopItem
     soundthread
-
+    lorien
 
   ];
 
  # -hyfu- installing SoundThread
   nixpkgs.config.packageOverrides = pkgs: {
 
-    soundthread = pkgs.callPackage /home/hyfudiar/Software/NixPackages/SoundThread/default.nix { };
+    soundthread = pkgs.callPackage /etc/nixos/NixPackages/SoundThread/default.nix { };
 
   };
 
