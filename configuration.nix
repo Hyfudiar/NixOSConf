@@ -202,6 +202,9 @@
     #makeDesktopItem
     soundthread
     lorien
+    obs-studio
+     
+
 
   ];
 
