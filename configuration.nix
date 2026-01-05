@@ -200,8 +200,17 @@
     #steam-run
     #copyDesktopItems
     #makeDesktopItem
+    soundthread
+
 
   ];
+
+ # -hyfu- installing SoundThread
+  nixpkgs.config.packageOverrides = pkgs: {
+
+    soundthread = pkgs.callPackage /home/hyfudiar/Software/NixPackages/SoundThread/default.nix { };
+
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
