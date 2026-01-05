@@ -4,7 +4,7 @@
 
 {
 
-  environment.systemPackages = with pkgs; [ pavucontrol libjack2 jack2 qjackctl jack_capture
+  environment.systemPackages = with pkgs; [ pulseaudioFull pavucontrol libjack2 jack2 qjackctl jack_capture
     zam-plugins
     cardinal
     distrho-ports
