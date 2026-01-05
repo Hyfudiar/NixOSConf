@@ -1,4 +1,4 @@
-{ stdenv, lib, fetchurl, autoPatchelfHook, libgcc }:
+{ stdenv, lib, fetchurl, autoPatchelfHook, libgcc, copyDesktopItems, makeDesktopItem }:
 
 stdenv.mkDerivation rec {
     pname = "soundthread";
