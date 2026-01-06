@@ -203,7 +203,9 @@
     soundthread
     lorien
     obs-studio
-    mame 
+    mame
+    furnace
+     
 
 
   ];
