@@ -206,7 +206,10 @@
     mame
     furnace
     davinci-resolve
-     
+    ffmpeg
+    ffmpeg_7-full
+    tldr
+    
 
 
   ];
