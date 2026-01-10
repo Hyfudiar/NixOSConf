@@ -12,5 +12,3 @@ fi
 
 
 sudo nixos-rebuild switch --flake /etc/nixos#bepithonk
-
-export LD_LIBRARY_PATH=$NIX_LD_LIBRARY_PATH

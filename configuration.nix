@@ -205,6 +205,7 @@
     obs-studio
     mame
     furnace
+    davinci-resolve
      
 
 
