@@ -209,7 +209,8 @@
     ffmpeg
     ffmpeg_7-full
     tldr
-    
+    cura-appimage
+      
 
 
   ];
