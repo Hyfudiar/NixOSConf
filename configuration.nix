@@ -211,7 +211,8 @@
     tldr
     cura-appimage
     freecad
-        
+    clamav
+         
 
 
   ];
