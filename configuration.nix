@@ -217,6 +217,11 @@
 
   ];
 
+ # -hyfu- enabling clamAV
+  services.clamav.daemon.enable = true;
+
+  services.clamav.updater.enable = true;
+
  # -hyfu- installing SoundThread
   nixpkgs.config.packageOverrides = pkgs: {
 
