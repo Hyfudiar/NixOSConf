@@ -223,14 +223,14 @@
   services.clamav.updater.enable = true;
 
   services.clamav.scanner.enable = true;
-  services.clamav.scanner.interval = "*-*-* 20:00:00"
+  services.clamav.scanner.interval = "*-*-* 20:00:00";
   services.clamav.scanner.scanDirectories = [
     "/home"
     "/var/lib"
     "/tmp"
     "/etc"
     "/var/tmp"
-  ]
+  ];
 
 
  # -hyfu- installing SoundThread
