@@ -212,17 +212,18 @@
     cura-appimage
     freecad
     clamav
-         
+    lutris
+    jetbrains.clion  
 
 
   ];
 
  # -hyfu- enabling clamAV
-  services.clamav.daemon.enable = true;
+  services.clamav.daemon.enable = false;
 
-  services.clamav.updater.enable = true;
+  services.clamav.updater.enable = false;
 
-  services.clamav.scanner.enable = true;
+  services.clamav.scanner.enable = false;
   services.clamav.scanner.interval = "*-*-* 20:00:00";
   services.clamav.scanner.scanDirectories = [
     "/home"
