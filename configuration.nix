@@ -213,7 +213,13 @@
     freecad
     clamav
     lutris
-    jetbrains.clion  
+    jetbrains.clion
+    cmake
+    chow-kick
+    chow-phaser
+    chow-centaur
+    chow-tape-model
+    
 
 
   ];
