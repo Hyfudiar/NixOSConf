@@ -10,7 +10,7 @@
     curl
     dbus
     libepoxy
-    fetchFromGitHub
+    #fetchFromGitHub
     libglut
     freetype
     gcc-unwrapped
