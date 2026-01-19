@@ -15,7 +15,7 @@
     freetype
     gcc-unwrapped
     gtk3
-    lib
+    #lib
     libGL
     libxcursor
     libxdmcp
