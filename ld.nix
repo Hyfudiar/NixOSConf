@@ -36,7 +36,7 @@
     python3
     sqlite
     stdenv
-
+    lv2
 
 
   ];
