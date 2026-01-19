@@ -1,6 +1,46 @@
 { config, lib, pkgs, ... }:
 {
 
+  
+# - hyfu - stuff for building nix pkgs
+  environment.systemPackages = with pkgs; [
+    alsa-lib
+    at-spi2-core
+    #cmake  - already have on main list -
+    curl
+    dbus
+    libepoxy
+    fetchFromGitHub
+    libglut
+    freetype
+    gcc-unwrapped
+    gtk3
+    lib
+    libGL
+    libXcursor
+    libXdmcp
+    libXext
+    libXinerama
+    libXrandr
+    libXtst
+    libdatrie
+    libjack2
+    libpsl
+    libselinux
+    libsepol
+    libsysprof-capture
+    libthai
+    libxkbcommon
+    pcre
+    pkg-config
+    python3
+    sqlite
+    stdenv
+
+
+
+  ];
+
     programs.nix-ld = {
     enable = true;
     libraries = with pkgs; [
