@@ -219,6 +219,8 @@
     chow-phaser
     chow-centaur
     chow-tape-model
+    chow-matrix
+    
     
 
 
@@ -244,6 +246,7 @@
   nixpkgs.config.packageOverrides = pkgs: {
 
     soundthread = pkgs.callPackage ./NixPackages/SoundThread/default.nix { };
+    chow-matrix = pkgs.callPackage ./NixPackages/ChowMatrix/default.nix { };
 
   };
 
