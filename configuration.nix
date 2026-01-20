@@ -222,7 +222,7 @@
     chow-matrix
     kdePackages.kdenlive
     nmap
-    nmapsi4
+    # nmapsi4 - qt thing is outdated or something
     net-tools
     cope
     
