@@ -220,6 +220,12 @@
     chow-centaur
     chow-tape-model
     chow-matrix
+    kdePackages.kdenlive
+    nmap
+    nmapsi4
+    net-tools
+    cope
+    
     
     
 
