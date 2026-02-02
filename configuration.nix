@@ -220,11 +220,8 @@
     chow-centaur
     chow-tape-model
     chow-matrix
-    kdePackages.kdenlive
     nmap
-    # nmapsi4 - qt thing is outdated or something
     net-tools
-    cope
     
     
     
