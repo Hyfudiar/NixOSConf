@@ -222,7 +222,7 @@
     chow-matrix
     nmap
     net-tools
-    
+    chirp 
     
     
 
