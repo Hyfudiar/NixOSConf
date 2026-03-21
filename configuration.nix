@@ -223,7 +223,7 @@
     nmap
     net-tools
     chirp 
-    
+    gamescope 
     
 
 
