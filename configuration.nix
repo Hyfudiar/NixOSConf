@@ -211,7 +211,7 @@
     tldr
     cura-appimage
     freecad
-    clamav
+    #clamav
     lutris
     jetbrains.clion
     cmake
@@ -224,25 +224,25 @@
     net-tools
     chirp 
     gamescope 
-    
+    openttd
 
 
   ];
 
- # -hyfu- enabling clamAV
-  services.clamav.daemon.enable = false;
-
-  services.clamav.updater.enable = false;
-
-  services.clamav.scanner.enable = false;
-  services.clamav.scanner.interval = "*-*-* 20:00:00";
-  services.clamav.scanner.scanDirectories = [
-    "/home"
-    "/var/lib"
-    "/tmp"
-    "/etc"
-    "/var/tmp"
-  ];
+# -hyfu- enabling clamAV
+#  services.clamav.daemon.enable = false;
+#
+#  services.clamav.updater.enable = false;
+#
+#  services.clamav.scanner.enable = false;
+#  services.clamav.scanner.interval = "*-*-* 20:00:00";
+#  services.clamav.scanner.scanDirectories = [
+#    "/home"
+#    "/var/lib"
+#    "/tmp"
+#    "/etc"
+#    "/var/tmp"
+#  ];
 
 
  # -hyfu- installing SoundThread
