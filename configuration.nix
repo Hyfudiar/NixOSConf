@@ -225,6 +225,7 @@
     chirp 
     gamescope 
     openttd
+    graphicsmagick
 
 
   ];
