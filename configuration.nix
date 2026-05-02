@@ -226,6 +226,7 @@
     gamescope 
     openttd
     graphicsmagick
+    android-tools
 
 
   ];
