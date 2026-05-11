@@ -227,7 +227,9 @@
     openttd
     graphicsmagick
     android-tools
-
+    ascii-image-converter
+    aha
+    
 
   ];
 
