@@ -230,6 +230,7 @@
     ascii-image-converter
     aha
     lsp-plugins 
+    didder
 
   ];
 
