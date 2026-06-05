@@ -231,6 +231,7 @@
     aha
     lsp-plugins 
     didder
+    obsidian
 
   ];
 
