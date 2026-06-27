@@ -149,8 +149,8 @@
     pkgsUnstable.bitwig-studio
     toybox
     pciutils
-    wineWowPackages.yabridge
-    wineWowPackages.stagingFull
+    wineWow64Packages.yabridge
+    wineWow64Packages.stagingFull
     winetricks
     yabridge
     yabridgectl
@@ -175,8 +175,8 @@
     vscode
     godot
     vital
-    surge
-    surge-XT 
+    gqrx 
+    surge-xt 
     cheese
     imagemagick
     gmic
@@ -200,7 +200,7 @@
     #steam-run
     #copyDesktopItems
     #makeDesktopItem
-    soundthread
+    # soundthread
     lorien
     obs-studio
     mame
@@ -254,7 +254,7 @@
  # -hyfu- installing SoundThread
   nixpkgs.config.packageOverrides = pkgs: {
 
-    soundthread = pkgs.callPackage ./NixPackages/SoundThread/default.nix { };
+    # soundthread = pkgs.callPackage ./NixPackages/SoundThread/default.nix { };
     chow-matrix = pkgs.callPackage ./NixPackages/ChowMatrix/default.nix { };
 
   };
