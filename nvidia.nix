@@ -1,5 +1,12 @@
 { config, lib, pkgs, ... }:
 {
+  assertions = lib.singleton {
+    assertion = config.boot.kernelPackages.kernel.isLTS;
+    message = ''
+      The nvidia driver can only support the LTS kernel.
+      Do not modify 'boot.kernelPackages'.
+    '';
+  };
 
   # Enable OpenGL
   hardware.graphics = {
@@ -10,7 +17,6 @@
   services.xserver.videoDrivers = ["nvidia"];
 
   hardware.nvidia = {
-
     # Modesetting is required.
     modesetting.enable = true;
 
@@ -31,6 +37,7 @@
     # https://github.com/NVIDIA/open-gpu-kernel-modules#compatible-gpus 
     # Only available from driver 515.43.04+
     open = false;
+    branch = "legacy_580";
 
     # Enable the Nvidia settings menu,
 	# accessible via `nvidia-settings`.

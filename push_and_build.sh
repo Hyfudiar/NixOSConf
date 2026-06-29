@@ -11,4 +11,4 @@ else
 fi
 
 
-sudo nixos-rebuild switch --flake /etc/nixos#bepithonk
+sudo nixos-rebuild boot --flake /etc/nixos#bepithonk
