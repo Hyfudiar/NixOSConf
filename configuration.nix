@@ -9,7 +9,7 @@
     [ # Include the results of the hardware scan.
       #<nixos-hardware/lenovo/thinkpad/p43s>
       ./hardware-configuration.nix
-      ./nvidia.nix
+      #./nvidia.nix
       ./audio.nix
       #./ld.nix
     ];
