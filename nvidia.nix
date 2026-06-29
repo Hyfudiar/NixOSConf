@@ -23,12 +23,12 @@
       enable = true;
 
       # Turn off when not in use
-      #finegrained = true;
+      finegrained = true;
     };
   };
 
   hardware.nvidia.prime = {
-    sync.enable = true;
+    sync.enable = false;
 
     intelBusId = "PCI:0:2:0";
     nvidiaBusId = "PCI:60:0:0";
