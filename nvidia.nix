@@ -23,7 +23,7 @@
       enable = true;
 
       # Turn off when not in use
-      finegrained = true;
+      #finegrained = true;
     };
   };
 
