@@ -3,7 +3,7 @@
     nixpkgs = { url = "github:NixOS/nixpkgs/nixos-26.05"; };
     nixpkgs-unstable = { url = "github:NixOS/nixpkgs/nixos-unstable"; };
     musnix  = { url = "github:musnix/musnix"; };
-    nixos-hardware = { url =  "github:NixOS/nixos-hardware/master"; };
+    #nixos-hardware = { url =  "github:NixOS/nixos-hardware/master"; };
     
   };
 
@@ -34,7 +34,7 @@
           [ 
             inputs.musnix.nixosModules.musnix
             ./configuration.nix
-            inputs.nixos-hardware.nixosModules.lenovo-thinkpad-p43s
+            #inputs.nixos-hardware.nixosModules.lenovo-thinkpad-p43s
             
           ];
         specialArgs = { inherit inputs; };
