@@ -11,7 +11,7 @@
       ./hardware-configuration.nix
       ./nvidia.nix
       ./audio.nix
-      ./ld.nix
+      #./ld.nix
     ];
 
   # Bootloader.
