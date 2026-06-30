@@ -28,10 +28,10 @@
 
     powerManagement = {
       # Suspend the full GPU memory
-      enable = true;
+      enable = false;
 
       # Turn off when not in use
-      finegrained = true;
+      finegrained = false;
     };
   };
 
