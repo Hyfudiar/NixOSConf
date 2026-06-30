@@ -13,7 +13,7 @@
   };
 
   # Force Plasma to only use the NVIDIA GPU
- environment.variables.KWIN_DRM_DEVICES = lib.escape [ ":" ] "/dev/dri/by-path/pci-0000:3c:0.0-card";
+ #environment.variables.KWIN_DRM_DEVICES = lib.escape [ ":" ] "/dev/dri/by-path/pci-0000:3c:0.0-card";
 
   # Enable OpenGL
   hardware.graphics.enable = true;
