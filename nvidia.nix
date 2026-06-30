@@ -13,7 +13,7 @@
   };
 
   # Force Plasma to only use the NVIDIA GPU
-  environment.variables.KWIN_DRM_DEVICES = lib.escape [ ":" ] "/dev/dri/by-path/pci-0000:3c:0.0-card";
+ environment.variables.KWIN_DRM_DEVICES = lib.escape [ ":" ] "/dev/dri/by-path/pci-0000:3c:0.0-card";
 
   # Enable OpenGL
   hardware.graphics.enable = true;
@@ -41,7 +41,7 @@
   # This is one of those cases where the NixOS module is almost as bad as
   # the wikis.
   hardware.nvidia.prime = {
-    sync.enable = false;
+    sync.enable = true;
 
     intelBusId = "PCI:0:2:0";
     nvidiaBusId = "PCI:60:0:0";
