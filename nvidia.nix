@@ -41,7 +41,7 @@
   # This is one of those cases where the NixOS module is almost as bad as
   # the wikis.
   hardware.nvidia.prime = {
-    sync.enable = true;
+    sync.enable = false;
 
     intelBusId = "PCI:0:2:0";
     nvidiaBusId = "PCI:60:0:0";
